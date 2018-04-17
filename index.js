@@ -17,6 +17,6 @@ app.get('/products', function(req, res) {
     res.render('products');
 });
 
-app.listen(3000, function() {
-    console.log('Website listening on port 3000!')
+app.listen(process.env.PORT || 3000, function() {
+    console.log(`Website listening on port ${process.env.PORT}`);
 });
